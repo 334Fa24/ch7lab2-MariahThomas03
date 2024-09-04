@@ -119,6 +119,11 @@ figure{
     max-width: 400px;
     margin: 2% auto;
 }
+ 
+figcaption{
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+}
 
 #info ul {
     margin-left: 10%;
@@ -178,6 +183,16 @@ footer a {
         padding: 0.5em;
     }
     
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    
+    aside{
+        grid-column: 1 / span 2;
+    }
+    
 }
 
 /* Media Query for Desktop Viewport */
@@ -195,12 +210,25 @@ footer a {
     nav li a:hover {
         color: #2a1f14;
         background-color: #f6eee4;
+        opacity: 0.5;
     }
     
     /* Desktop Viewport: Style rules for main content */
     #info ul {
         margin-left: 5%;
     }
+    
+    .grid{
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+    
+    aside{
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+    
+    
     
 }
 
